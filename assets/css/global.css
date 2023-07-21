@@ -1,7 +1,30 @@
+:root {
+    --scrollbar:#55569E
+    ;
+    --scrollbar-background: transparent;
+   }
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    
 }
+* ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+   
+  }
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 0;
+    scrollbar-width: 6px
+}
+*::-webkit-scrollbar,::-webkit-scrollbar-track {
+    background: var(--scrollbar-background)
+}
+*::-webkit-scrollbar-thumb {
+    background: var(--scrollbar);
+    border-radius: 5px; 
+}
+
 
 @font-face {
     font-family: 'Neue Machina';
@@ -11,6 +34,8 @@
 body {
     background-color: #000;
     color: #fff;
+    transition: all .25s ease-in 0.1s;
+    overflow-y: scroll;
 }
 
 a {

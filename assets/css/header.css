@@ -7,7 +7,7 @@
 
 .header::after {
     content: '';
-    display: inline-block;
+    display: none;
     position: absolute;
     top: 1rem;
     right: 1rem;
